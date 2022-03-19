@@ -1,0 +1,145 @@
+body {
+    margin: 0 auto;
+    background-color: #282923;
+}
+
+.content-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-medium {
+	color: #fff;
+	font-size: 20px;
+}
+
+.title {
+	color: #fff;
+	font-size: 45px;
+}
+
+.img-header {
+    width: 100%;
+}
+
+.text-center {
+	text-align: center;
+}
+
+nav {
+	position: fixed;
+	width: 100%;
+	text-align: center;
+	background-color: rgba(255, 255, 255, 0.13);
+}
+
+nav > ul {
+	display: inline-flex;
+}
+
+.menu li {
+	list-style: none;
+	margin-right: 30px;
+}
+
+.menu li a {
+	font-size: 20px;
+	text-decoration: none;
+	color: #fff;
+}
+
+header {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.brand {
+	position: absolute;
+	color: rgba(255, 255, 255, 0.32);
+	font-size: 130px;
+	font-family: 'Brush Script MT', cursive;
+}
+
+.nosotros {
+	display: flex;
+	padding: 25px;
+	background-color: #282923;
+}
+
+
+#menu {
+	padding: 25px;
+	text-align: center;
+}
+
+.carta {
+	display: grid;
+	grid-template-columns: [x0] 1fr [x1] 1fr [x2] 1fr [x3];
+  	grid-template-rows: [y0] 1fr [y1] 1fr [y2] 1fr [y3];
+  	height: 1200px;
+}
+
+.food-card > img {
+	width: 600px;
+	height: 600px;
+	object-fit: cover;
+}
+
+
+#ubicacion {
+	padding: 25px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+#contactus {
+	padding: 25px;
+}
+
+.contactanos {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	background-color: rgba(13, 13, 13, 0.38);
+	color: #fff;
+	border-radius: 12px;
+}
+
+.social-media {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 30px
+}
+
+.social-media > i {
+	margin-right: 20px;
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../img/pared.jpg");
+
+  /* Set a specific height */
+  min-height: 500px; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.brand-footer {
+	font-weight: bold;
+	font-size: 20px;
+}
+
+.footer-section {
+	width: 33.33%;
+}
