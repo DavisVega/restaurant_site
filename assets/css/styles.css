@@ -35,6 +35,10 @@ body {
 	text-align: center;
 }
 
+.text-right {
+	text-align: right;
+}
+
 nav {
 	position: fixed;
 	width: 100%;
