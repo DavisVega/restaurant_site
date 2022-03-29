@@ -80,8 +80,14 @@ header {
 	padding: 25px;
 	background-color: #282923;
 	justify-content: space-around;
+	margin-top: 100px;
+	margin-bottom: 50px;
 }
 
+.padding-x {
+	padding-left: 30px;
+    padding-right: 30px;
+}
 
 #menu {
 	padding: 25px;
@@ -108,6 +114,8 @@ header {
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	margin-top: 200px;
+	margin-bottom: 200px;
 }
 
 #contactus {
