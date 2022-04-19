@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Vega's Restaurant - Editar Sucursal</title>
+	<link rel="stylesheet" href="../../../assets/css/views.css">
+    <link rel="stylesheet" href="../../assets/css/admin.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li>
+				<a href="../index.html">
+					Inicio
+				</a>
+			</li>
+			<li>
+				<a href="aboutus.html">
+					Nosotros
+				</a>
+			</li>
+			<li>
+				<a href="menu.html">
+					Menu
+				</a>
+			</li>
+			<li>
+				<a href="ubicacion.html">
+					Ubicación
+				</a>
+			</li>
+			<li>
+				<a href="contactus.html">
+					Contactanos
+				</a>
+			</li>
+            <li>
+				<a href="#">
+					Inicio de Sesión
+				</a>
+			</li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Admin</a>
+				<div class="dropdown-content">
+				  <a href="nuevo.html">Sucursales</a>
+				  <a href="../reservaciones/nuevo.html">Reservaciones</a>
+				  <a href="../platillos/nuevo.html">Platillos</a>
+				  <a href="../tipoPlatillo/nuevo.html">Tipo Platillo</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+
+    <div class="container separator-margin">
+        
+        <div class="separator-margin">
+			<h1>
+                Editar Sucursal
+			</h1>
+            <hr>
+		</div>
+
+        <div class="mt-20">
+            <form action="" method="post" class="w-half">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" class="form-control mt-10 mb-20" placeholder="* Nombre" required>
+                
+                <label for="name" class="mt-20">Teléfono</label>
+                <input type="tel" name="phone" id="phone" class="form-control mt-10 mb-20" placeholder="* Teléfono" required>
+
+                <label for="name" class="mt-20">Celular</label>
+                <input type="text" name="celphone" id="celphone" class="form-control mt-10 mb-20" placeholder="Celular">
+                
+                <label for="name" class="mt-20">Dirección</label>
+                <textarea name="address" id="address" cols="30" rows="10" class="form-control mt-10" placeholder="* Dirección" required></textarea>
+
+                <p class="error"></p>
+
+                <div class="flex mt-20">
+                    <input type="reset" value="Cancelar" class="btn btn-danger">
+                    <button type="button" id="ingresar" class="btn btn-warning margin-left-10">Actualizar</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="../../../assets/js/jquery-3.6.0.min.js"></script>
+    <script>
+        $( document ).ready(function() {
+            $(".error").text( "" );
+        });
+    </script>
+</body>
+</html>

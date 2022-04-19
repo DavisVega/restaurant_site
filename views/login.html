@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Vega's Restaurant - Inicio de Sesión</title>
+	<link rel="stylesheet" href="../assets/css/styles.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li>
+				<a href="../index.html">
+					Inicio
+				</a>
+			</li>
+			<li>
+				<a href="aboutus.html">
+					Nosotros
+				</a>
+			</li>
+			<li>
+				<a href="menu.html">
+					Menu
+				</a>
+			</li>
+			<li>
+				<a href="ubicacion.html">
+					Ubicación
+				</a>
+			</li>
+			<li>
+				<a href="contactus.html">
+					Contactanos
+				</a>
+			</li>
+            <li>
+				<a href="#">
+					Inicio de Sesión
+				</a>
+			</li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Admin</a>
+				<div class="dropdown-content">
+				  <a href="admin/sucursales/nuevo.html">Sucursales</a>
+				  <a href="admin/reservaciones/nuevo.html">Reservaciones</a>
+				  <a href="admin/platillos/nuevo.html">Platillos</a>
+				  <a href="admin/tipoPlatillo/nuevo.html">Tipo Platillo</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+
+    <div class="container separator-margin">
+        
+        <div class="separator-margin text-center">
+			<h1>
+                Inicio de Sesión
+			</h1>
+		</div>
+
+        <div class="flex separator-margin">
+            <div class="w-half">
+                <img src="../assets/img/login/login.jpg" alt="Contactanos" style="width: 90%;">
+            </div>
+            <div class="content-colum w-half">
+                <form action="" method="post" class="w-half">
+                	<input type="email" name="email" id="user" class="form-control" placeholder="* email" required>
+                    
+					<input type="password" name="clave" id="clave" class="form-control mt-20" placeholder="* Clave">
+                    
+                    <input type="password" name="confirmar" id="confirmar" class="form-control mt-20" placeholder="* Confirmar Clave">
+
+                    <p>
+                        <a href="register.html">O registrate aquí!</a>
+                    </p>
+
+                    <p class="error"></p>
+
+                    <div class="flex mt-20">
+                        <input type="reset" value="Cancelar" class="btn btn-danger">
+                        <button type="button" id="ingresar" class="btn btn-primary margin-left-10">Ingresar</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.js" integrity="sha256-HwWONEZrpuoh951cQD1ov2HUK5zA5DwJ1DNUXaM6FsY=" crossorigin="anonymous"></script>
+    <script>
+        $( document ).ready(function() {
+            $(".error").text( "" );
+
+            $("#ingresar").on( "click", function() {
+
+                if( $("#user").empty() ||  $("#clave").empty() || $("#confirmar").empty() || ( $("#clave").val() != $("#confirmar").val() ) ) {
+                    $(".error").text( "Los campos son requeridos o Las claves no coinciden!" );
+                } else {
+                    $(".error").text( "" );
+                }
+            });
+        });
+    </script>
+</body>
+</html>

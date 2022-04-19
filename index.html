@@ -6,180 +6,57 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-	<nav>
-		<ul class="menu">
+	<nav class="menu-home">
+		<ul class="menu-options">
 			<li>
 				<a href="#">
 					Inicio
 				</a>
 			</li>
 			<li>
-				<a href="#aboutUs">
+				<a href="views/aboutus.html">
 					Nosotros
 				</a>
 			</li>
 			<li>
-				<a href="#menu">
+				<a href="views/menu.html">
 					Menu
 				</a>
 			</li>
 			<li>
-				<a href="#ubicacion">
+				<a href="views/ubicacion.html">
 					Ubicación
 				</a>
 			</li>
 			<li>
-				<a href="#contactus">
+				<a href="views/contactus.html">
 					Contactanos
 				</a>
+			</li>
+			<li>
+				<a href="views/login.html">
+					Inicio de Sesión
+				</a>
+			</li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Admin</a>
+				<div class="dropdown-content">
+				  <a href="views/admin/sucursales/nuevo.html">Sucursales</a>
+				  <a href="views/admin/reservaciones/nuevo.html">Reservaciones</a>
+				  <a href="views/admin/platillos/nuevo.html">Platillos</a>
+				  <a href="views/admin/tipoPlatillo/nuevo.html">Tipo Platillo</a>
+				</div>
 			</li>
 		</ul>
 	</nav>
 
 	<header>
-		<video class="img-header" src="assets/videos/video.webm" autoplay="true" muted></video>
-		<h1 class="brand">
-			vega
+		<video id="video" class="img-header" src="assets/videos/video.webm" autoplay="true" muted></video>
+		<h1 class="brand text-center">
+			Vega <br>
+			Restaurant
 		</h1>
 	</header>
 
-	<section id="aboutUs" class="nosotros">
-		<div class="content-center flex-column text-medium padding-x">
-			<h3>
-				JUNTOS SOMOS VEGA'S RESTAURANT
-			</h3>
-			<p>
-				Somos una experiencia de hospitalidad y gastronomía Salvadoreña en constante movimiento. 
-				Empezamos en 2003, creando el primer Vega's Restaurant* local. Desde entonces, nos dedicamos a cocinar 
-				tus platillos salvadoreños favoritos, recibiéndote siempre, en un ambiente casual y divertido. Cada día, 
-				seleccionamos los mejores ingredientes de proveedores locales y extranjeros responsables con EEUU y 
-				el medio ambiente. Trabajamos en equipo para tocar positivamente la vida de nuestros compañeros e 
-				invitados con procesos seguros, excelente servicio y pasión culinaria. Nos mueve aprender, enseñar y 
-				descubrir para crecer. Creemos en aprovechar lo que recibimos para convertirlo en algo mejor. 
-				Sobre todas las cosas, siempre queremos que la pases bien comiendo y bebiendo delicioso con nosotros. 
-				Descubre todo nuestro menú sorprendiéndote con algo nuevo cada vez.
-			</p>
-		</div>
-	</section>
-
-	<section class="nosotros">
-		<div class="content-center flex-column text-medium">
-			<h3>
-				Las mejores cosas de la vida no caen del cielo.... <br>
-				Muchas de ellas las conoces en la cocina <span class="text-bold">Vega</span>
-			</h3>
-			<p class="text-bold">
-				La recomendada pasta a la Amatriciana 
-			</p>
-			<ul>
-				<li>
-					Papada de cerdo
-				</li>
-				<li>
-					Tomates maduros o en conserva
-				</li>
-				<li>
-					Queso pecorino
-				</li>
-				<li>
-					Espaguetis
-				</li>
-				<li>
-					Guindilla un trozo
-				</li>
-				<li>
-					Vivo blanco un chorreón
-				</li>
-				<li>
-					Sal al gusto
-				</li>
-			</ul>
-		</div>
-		<div>
-			<img src="assets/img/food.jpg" class="food">
-		</div>
-	</section>
-
-	<section class="nosotros">
-		<div>
-			<img src="assets/img/carta/Lunes.png" class="food">
-		</div>
-		<div class="content-center text-medium">
-			<h3>
-				Cada lunes disfruta el doble!
-			</h3>
-		</div>
-	</section>
-
-	<section id="menu">
-		<p class="title">
-			Menu
-		</p>
-		<div class="carta">
-			<div class="food-card">
-				<img src="assets/img/carta/food1.jpg">
-			</div>
-			<div class="food-card">
-				<img src="assets/img/carta/food2.jpg">
-			</div>
-			<div class="food-card">
-				<img src="assets/img/carta/food3.jpg">
-			</div>
-			<div class="food-card">
-				<img src="assets/img/carta/food4.jpg">
-			</div>
-			<div class="food-card">
-				<img src="assets/img/carta/food5.jpg">
-			</div>
-			<div class="food-card">
-				<img src="assets/img/carta/food6.jpg">
-			</div>
-		</div>
-	</section>
-
-	<section id="ubicacion">
-		<p class="title">
-			Nuestra Ubicación
-		</p>
-		<div class="mapouter">
-			<div class="gmap_canvas">
-				<iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=universidad tecnologica&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed">
-					
-				</iframe>
-				<a href="https://kokagames.com/">FNF</a>
-			</div>
-				<style>.mapouter{position:relative;text-align:right;width:600px;height:400px;}.gmap_canvas {overflow:hidden;background:none!important;width:600px;height:400px;}.gmap_iframe {width:600px!important;height:400px!important;}
-			</style>
-		</div>
-	</section>
-
-	<footer id="contactus" class="parallax content-center">
-		<div class="contactanos">
-			<div class="footer-section">
-				<p style="font-weight: bold">ESTAMOS ABIERTOS DE</p>
-				<p>Lunes: 10:00 am a 11:00 pm</p>
-				<p>Martes: cerrado </p>
-				<p>Miércoles a domingo: 10:00 am a 11:00 pm</p>
-			</div>
-			<div class="text-center footer-section">
-				<p class="brand-footer">
-					Vega <br>
-					Restorant
-				</p>
-				<p>
-					todos nuestros platos de comida saludable están previamente estudiados por un nutricionista profesional
-				</p>
-				<div class="social-media">
-					<i class="fab fa-facebook"></i>
-					<i class="fab fa-instagram"></i>
-					<i class="fab fa-twitter"></i>
-				</div>
-			</div>
-			<div class="text-center footer-section">
-				<p>Tel: 2216-0854</p>
-				<p>Email: vega_restorant@gmail.com</p>
-			</div>
-		</div>
-	</footer>
 </body>
 </html>

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Vega's Restaurant - Nuevo Tipo de Platillo</title>
+	<link rel="stylesheet" href="../../../assets/css/views.css">
+    <link rel="stylesheet" href="../../assets/css/admin.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+	<nav>
+		<ul class="menu">
+			<li>
+				<a href="../../../index.html">
+					Inicio
+				</a>
+			</li>
+			<li>
+				<a href="../../aboutus.html">
+					Nosotros
+				</a>
+			</li>
+			<li>
+				<a href="../../menu.html">
+					Menu
+				</a>
+			</li>
+			<li>
+				<a href="../../ubicacion.html">
+					Ubicación
+				</a>
+			</li>
+			<li>
+				<a href="../../contactus.html">
+					Contactanos
+				</a>
+			</li>
+            <li>
+				<a href="../../login.html">
+					Inicio de Sesión
+				</a>
+			</li>
+			<li class="dropdown">
+				<a href="javascript:void(0)" class="dropbtn">Admin</a>
+				<div class="dropdown-content">
+				  <a href="../sucursales/nuevo.html">Sucursales</a>
+				  <a href="../reservaciones/nuevo.html">Reservaciones</a>
+				  <a href="../platillos/nuevo.html">Platillos</a>
+				  <a href="nuevo.html">Tipo Platillo</a>
+				</div>
+			</li>
+		</ul>
+	</nav>
+
+    <div class="container separator-margin">
+        
+        <div class="separator-margin flex items-center flex-between">
+			<h1>
+                Nuevo Tipo de Platillo
+			</h1>
+            <a class="btn btn-info" href="editar.html">Editar</a>
+		</div>
+
+		<hr>
+
+        <div class="mt-20">
+            <form action="" method="post" class="w-half">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" placeholder="* Nombre" class="form-control mt-10 mb-20" required>
+
+                <p class="error"></p>
+
+                <div class="flex mt-20">
+                    <input type="reset" value="Cancelar" class="btn btn-danger">
+					<input type="submit" value="Agregar" class="btn btn-success margin-left-10">
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
