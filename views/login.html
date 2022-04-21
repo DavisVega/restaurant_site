@@ -6,56 +6,15 @@
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.0/css/all.min.css" integrity="sha512-BnbUDfEUfV0Slx6TunuB042k9tuKe3xrD6q4mg5Ed72LTgzDIcLPxg6yI2gcMFRyomt+yJJxE+zJwNmxki6/RA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 <body>
-	<nav>
-		<ul class="menu">
-			<li>
-				<a href="../index.html">
-					Inicio
-				</a>
-			</li>
-			<li>
-				<a href="aboutus.html">
-					Nosotros
-				</a>
-			</li>
-			<li>
-				<a href="menu.html">
-					Menu
-				</a>
-			</li>
-			<li>
-				<a href="ubicacion.html">
-					Ubicación
-				</a>
-			</li>
-			<li>
-				<a href="contactus.html">
-					Contactanos
-				</a>
-			</li>
-            <li>
-				<a href="#">
-					Inicio de Sesión
-				</a>
-			</li>
-			<li class="dropdown">
-				<a href="javascript:void(0)" class="dropbtn">Admin</a>
-				<div class="dropdown-content">
-				  <a href="admin/sucursales/nuevo.html">Sucursales</a>
-				  <a href="admin/reservaciones/nuevo.html">Reservaciones</a>
-				  <a href="admin/platillos/nuevo.html">Platillos</a>
-				  <a href="admin/tipoPlatillo/nuevo.html">Tipo Platillo</a>
-				</div>
-			</li>
-		</ul>
-	</nav>
-
     <div class="container separator-margin">
         
         <div class="separator-margin text-center">
 			<h1>
-                Inicio de Sesión
+				Vega's Restaurant
 			</h1>
+			<h2>
+				Inicio de Sesión
+			</h2>
 		</div>
 
         <div class="flex separator-margin">
@@ -71,14 +30,15 @@
                     <input type="password" name="confirmar" id="confirmar" class="form-control mt-20" placeholder="* Confirmar Clave">
 
                     <p>
-                        <a href="register.html">O registrate aquí!</a>
+                        <a href="../index.html">Regresar</a> ó <a href="register.html">Registrate aquí!</a>
                     </p>
 
                     <p class="error"></p>
 
                     <div class="flex mt-20">
                         <input type="reset" value="Cancelar" class="btn btn-danger">
-                        <button type="button" id="ingresar" class="btn btn-primary margin-left-10">Ingresar</button>
+                        <!--<button type="button" id="ingresar" class="btn btn-primary margin-left-10">Ingresar</button>-->
+						<a href="admin/sucursales/nuevo.html" class="btn btn-primary margin-left-10" >Ingresar</a>
                     </div>
                 </form>
             </div>
